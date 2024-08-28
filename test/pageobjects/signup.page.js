@@ -28,7 +28,7 @@ class SignupPage extends Page {
         
         await this.inputEmail.setValue(email);
         await this.btnSubmit.click();
-        await browser.pause(5000); 
+        // await browser.pause(5000); 
       
 
 
@@ -37,7 +37,7 @@ class SignupPage extends Page {
         await this.inputPassword.setValue(password);
         await this.inputPasswordConfirmation.setValue(passwordCon);
         await this.btnSubmit.click();
-        await browser.pause(5000); 
+        // await browser.pause(5000); 
 
     }
 

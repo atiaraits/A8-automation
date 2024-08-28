@@ -2,10 +2,30 @@ export const config = {
 
     runner: 'local',
 
+
     specs: [
-        './test/specs/**/*.js'
+        // './test/specs/**/test.signup.js'
+        './test/specs/**/test.login.js'
     ],
- 
+
+    suites: {
+
+        registration: [
+            './test/specs/**/test.signup.js',
+        ],
+
+        login: [
+            './test/specs/**/test.login.js',
+            
+        ],
+
+        regression: [
+            './test/specs/**/test.signup.js',
+            './test/specs/**/test.login.js',
+        ]
+    },
+
+
     exclude: [
         // 'path/to/excluded/files'
     ],

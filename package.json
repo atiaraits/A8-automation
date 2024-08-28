@@ -9,7 +9,10 @@
   },
 
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "test_login": "wdio wdio.conf.js --suite login",
+    "test_registration": "wdio wdio.conf.js --suite registration",
+    "test_regression": "wdio wdio.conf.js --suite regression"
   },
 
   "dependencies": {

@@ -18,7 +18,7 @@ class LoginPage extends Page {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
-        await browser.pause(5000); 
+        browser.pause(3000); 
 
     }
 
