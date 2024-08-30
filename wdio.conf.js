@@ -39,16 +39,16 @@ export const config = {
     logLevel: 'error',
     bail: 0,
     capabilities: [
-        // {
-        //     maxInstances: 10,
-        //     browserName: 'chrome',
-        //     acceptInsecureCerts: true
-        // },
         {
             maxInstances: 10,
-            browserName: 'firefox',
+            browserName: 'chrome',
             acceptInsecureCerts: true
-        }
+        },
+        // {
+        //     maxInstances: 10,
+        //     browserName: 'firefox',
+        //     acceptInsecureCerts: true
+        // }
     ],
 
 
