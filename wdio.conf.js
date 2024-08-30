@@ -5,9 +5,11 @@ export const config = {
 
     specs: [
         
-        './test/specs/**/test.purchase.js'
+        // './test/specs/**/test.purchase.js'
         // './test/specs/**/test.signup.js'
         // './test/specs/**/test.login.js'
+        './test/specs/**/test.faqform.js'
+
     ],
 
     suites: {
