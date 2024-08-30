@@ -1,5 +1,5 @@
 {
-  "name": "First_Project",
+  "name": "A8-Automation",
   "type": "module",
   "devDependencies": {
     "@wdio/allure-reporter": "^8.39.0",
@@ -14,8 +14,6 @@
     "wdio": "wdio run ./wdio.conf.js",
     "test_login": "wdio wdio.conf.js --suite login",
     "test_registration": "wdio wdio.conf.js --suite registration",
-    "test_purchase": "wdio wdio.conf.js --suite purchase",
-    "test_login_and_test_purchase": "wdio wdio.conf.js --suite login --suite purchase",
     "test_regression": "wdio wdio.conf.js --suite regression"
   },
   "dependencies": {
