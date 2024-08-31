@@ -4,7 +4,7 @@ import Page from './page.js';
 class LoginPage extends Page {
 
     get inputUsername () {
-        // return $('#email');
+      
         return $('[placeholder="Your email"]')
     }
     get inputPassword () {
@@ -15,7 +15,10 @@ class LoginPage extends Page {
     }
     
     async login (username, password) {
-        await browser.pause(5000);
+        // await browser.pause(5000);
+        
+        // await this.inputUsername.waitForDisplayed();
+        // (await this.inputUsername).waitForDisplayed();
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();

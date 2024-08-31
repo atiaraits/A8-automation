@@ -61,7 +61,28 @@ export const config = {
 
     framework: 'mocha',
 
-    reporters: ['spec'],
+    reporters: [
+        'spec', 
+        ['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+    }],
+    // [
+        //     SlackReporter,
+        //     {
+        //         slackOptions: {
+        //             type: 'web-api',
+        //             channel: 'C06RY8B282D',
+        //             slackBotToken: 'your bot token',
+        //         },
+        //         title: 'Slack Reporter Testdddd',
+        //     }
+
+        // ]
+
+],
+    
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000

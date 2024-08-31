@@ -26,7 +26,8 @@ class SignupPage extends Page {
     
     async signup (email,username,phone,password,passwordCon) {
         
-        await browser.pause(5000);
+        // await browser.pause(5000);
+        await browser.pause(5000); 
         await this.inputEmail.setValue(email);
         await this.btnSubmit.click();
         
