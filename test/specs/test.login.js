@@ -5,7 +5,7 @@ describe('My Login application', () => {
         
         
         await LoginPage.open()
-        await LoginPage.login('atiaraits@gmail.com', 'Ati@r10310496')
+        await LoginPage.login('atiaraits19@gmail.com', 'Ati@r10310496')
         
     })
 })

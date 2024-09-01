@@ -2,6 +2,8 @@ import allure from '@wdio/allure-reporter';
 import fs from 'fs';
 import path from 'path';
 
+
+
 export const config = {
 
     runner: 'local',
@@ -9,9 +11,9 @@ export const config = {
 
     specs: [
         
-        // './test/specs/**/test.purchase.js'
+        './test/specs/**/test.purchase.js'
         // './test/specs/**/test.signup.js'
-        './test/specs/**/test.login.js'
+        // './test/specs/**/test.login.js'
         // './test/specs/**/test.faqform.js'
 
     ],
@@ -56,6 +58,10 @@ export const config = {
         }
     },
 
+ 
+    
+   
+
     logLevel: 'error',
     bail: 0,
     capabilities: [
@@ -72,7 +78,7 @@ export const config = {
     ],
 
 
-    waitforTimeout: 20000,
+    waitforTimeout: 50000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     services: [],
@@ -88,10 +94,11 @@ export const config = {
         }
     },
 
+
     framework: 'mocha',
 
     reporters: [
-        'spec', 
+        'spec',        
         ['allure', {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,

@@ -8,7 +8,7 @@ class PurchasePage extends Page {
         return $("a=Courses");
     }
     get bookNow () {
-        return $$('button=Book Now')[0];
+        return $$('button=Book Now')[1];
     }
     get inputEmail () {
         return $('#email');
@@ -39,6 +39,9 @@ class PurchasePage extends Page {
 
     }
     
+    get toggleCheckbox() {
+        return $('#for_self');
+    }
 
     async purchase (email,cardnumber,cardexpiry,cvc,billingname) {
         
@@ -55,6 +58,10 @@ class PurchasePage extends Page {
         await this.submitButton.click();
         await browser.pause(10000); 
         await expect(browser).toHaveTitle('Purchased Success | Acceler8 Training',{message :`Purchase Not successful`});
+        await browser.pause(5000);
+        await this.toggleCheckbox.click();
+        await browser.pause(5000);
+        await this.submitButton.click();
         await browser.pause(5000);
 
 
