@@ -15,7 +15,8 @@ class LoginPage extends Page {
     }
     
     async login (username, password) {
-        // await browser.pause(5000);
+        
+        await browser.pause(5000);
         
         // await this.inputUsername.waitForDisplayed();
         // (await this.inputUsername).waitForDisplayed();
