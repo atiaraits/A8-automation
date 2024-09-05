@@ -1,1 +1,1 @@
-# A8-automation
+# Acceler8-automation-with-WebdriverIO
